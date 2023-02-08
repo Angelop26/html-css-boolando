@@ -5,3 +5,91 @@
     box-sizing: border-box;
 }
 
+.container{
+    width: 80%;
+    margin: 0 auto;
+    /* debug */
+    /* border: 1px solid black;
+    height: 600px; */
+}
+.row{
+    display: flex;
+    margin-bottom: 30px;
+}
+/* CARD */
+.card{
+    width: calc(100% / 3);
+    position: relative;
+    /* debug */
+    /* border: 1px solid red; */
+    /* height: 505px;
+    width: 100px; */
+}
+.mg-020{
+    margin: 0 20px;
+}
+
+/* Sezione immagine */
+img{
+    max-width: 100%;
+}
+.front-img{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.back-img{
+    top: 0;
+    left: 0;
+    position: relative;
+}
+.front-img:hover{
+    display: none;
+}
+.preferito{
+    width: 15%;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.info-container{
+    position: absolute;
+    bottom: 70px;
+}
+.sconto{
+    display: inline-block;
+    width: 35%;
+    background-color: red;
+    padding: 5px 10px;
+    font-size: .8rem;
+}
+
+.sconto.sc-30{
+    width: 100%;
+}
+.eco{
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+    background-color: greenyellow;
+    padding: 5px 10px;
+    font-size: .9rem;
+}
+
+/* Sezione testo */
+span{
+    font-size: .8rem;
+    margin-right: .2rem;
+}
+span.red-prize{
+    color: red;
+}
+
+span.original-prize{
+    text-decoration: line-through ;
+}
