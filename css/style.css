@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* COMMON */
 .container{
     width: 80%;
     margin: 0 auto;
@@ -12,6 +13,58 @@
     /* border: 1px solid black;
     height: 600px; */
 }
+
+.flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+
+h6{
+    color: gray;
+    text-decoration: none;
+}
+/* HEADER */
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: orange;
+    margin-bottom: 30px;
+}
+
+.logo,
+.account{
+    width: 30%;
+}
+
+.logo{
+    text-align: center;
+    width: 40%;
+    padding: 100px;
+}
+li a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.navigation ul{
+    text-align: center;
+    list-style-type: none;
+}
+
+.navigation li{
+    display: inline-block;
+    margin: .5rem;
+}
+
+.account{
+    text-align: end;
+    color: white;
+}
+/* MAIN */
 .row{
     display: flex;
     margin-bottom: 30px;
@@ -33,19 +86,17 @@
 img{
     max-width: 100%;
 }
-.front-img{
+.back-img{
+    display: none;
     top: 0;
     left: 0;
     position: absolute;
 }
-
-.back-img{
-    top: 0;
-    left: 0;
+.card .img{
     position: relative;
 }
-.front-img:hover{
-    display: none;
+.card:hover .back-img{
+    display: block;
 }
 .preferito{
     width: 15%;
@@ -92,4 +143,35 @@ span.red-prize{
 
 span.original-prize{
     text-decoration: line-through ;
+}
+
+/* FOOTER */
+footer{
+    background-color: #1A1A1A;
+}
+ .footer{
+    justify-content: space-between;
+ }
+/* Footer left */
+.ft-left{
+    color: white;
+    padding: 30px 0;
+}
+.ft-left ul{
+    list-style-type: none;
+}
+.ft-left li{
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+/* Footer right */
+.ft-right{
+    padding: 30px 0;
+    color: white;
+}
+
+.ft-right p{
+    text-align: center;
+    font-size: .8rem;
 }
